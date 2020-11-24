@@ -22,17 +22,32 @@ h1{
     text-decoration: underline;
 }
 
-ol {
-    list-style-type: upper-roman;
-    font-size: 42px;
-  }
+div > p > span{
+    text-decoration: underline;
+}
 
 /*Descendant (inheritence)
 div form{
+}*/
 
+.ordered-list{
+font-size: 65px;
+list-style-type: upper-roman;
 }
-*/
 
+.unordered-list{
+    font-size: 32px;
+    list-style-image: url(pic1.png);
+    color:lightslategray;
+    }
+
+.body-class{
+    font-family: 'Times New Roman', Times, serif;
+}
+p > span{
+    font-style: italic;
+    color: red;
+}
 
 /* Direct Descendant*/
 div > form{
@@ -48,4 +63,15 @@ background-color: orange;
 label > .example-class{
     color: blue;
     width: 500 px;
+}
+
+/*ID's are unique on the html doc. 
+There should never be 2 of the same*/
+
+#movies {
+    color: skyblue;
+}
+
+#video{
+    width: auto;
 }
