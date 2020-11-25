@@ -1,0 +1,117 @@
+/* Here is a link to all the css properties and tags https://www.w3schools.com/css/default.asp */
+body{
+    background-color: lightcoral;
+}
+
+div{
+background-color: orange;
+}
+
+p{
+font-size: 50px;
+background-color: springgreen;
+}
+
+form{
+    background-color: palegreen;
+}
+
+h1{
+    padding: 205px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+body > div{
+    height: 500px;
+    width: 500px;
+    background-color: magenta;
+}
+div > p > span{
+    text-decoration: underline;
+}
+
+/*Descendant (inheritence)
+div form{
+}*/
+
+.ordered-list{
+font-size: 65px;
+list-style-type: upper-roman;
+}
+
+.unordered-list{
+    font-size: 32px;
+    list-style-image: url(pic1.png);
+    color:lightslategray;
+    }
+
+.body-class{
+    font-family: 'Times New Roman', Times, serif;
+}
+p > span{
+    font-style: italic;
+    color: red;
+}
+
+/* Direct Descendant*/
+div > form{
+background-color: orange;
+}
+
+.example-class{
+    color: blue;
+    width: 500 px;
+}
+
+/*class applied to a direct descendant*/
+label > .example-class{
+    color: blue;
+    width: 500 px;
+}
+
+/*ID's are unique on the html doc. 
+There should never be 2 of the same*/
+
+#movies {
+    color: skyblue;
+}
+
+#video{
+    width: auto;
+}
+
+/* siblings of id - can add multiple '+' signs
+#example p+p {
+    background-color: yellow;
+}
+
+/* parent-child of id - these have a bunch of keywords after colon
+#example p:first-child{
+    background-color: yellow;
+}
+
+/* all paragrpahs when hovered over...
+#example p:hover{
+    background-color: yellow;
+}
+
+*/
+
+nav {
+    height: 50px;
+    background-color: teal;
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
