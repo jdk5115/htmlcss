@@ -7,9 +7,11 @@ div{
 background-color: orange;
 }
 
-p{
-font-size: 50px;
-background-color: springgreen;
+p img{
+    border-radius: 12px;
+    max-width: 100%;
+    max-height: auto;
+    padding: 5px;
 }
 
 form{
@@ -35,6 +37,13 @@ div > p > span{
 div form{
 }*/
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
 .ordered-list{
 font-size: 65px;
 list-style-type: upper-roman;
@@ -127,6 +136,10 @@ ul li{
     body {
     background-color: lightcoral;
     }
+    img{
+        max-width: 100%;
+        max-height: auto;
+    }
 }
 
 @media only screen and (min-width: 400px) {
@@ -139,6 +152,11 @@ ul li{
     }
     nav{
         padding-left: 50px;
+    }
+    img{
+        max-width: 100%;
+        max-height: auto;
+    }
 }
 
 @media screen and (min-width: 750px) {
@@ -151,6 +169,10 @@ ul li{
     }
     nav {
         padding-left: 50px;
+    }
+    img{
+        max-width: 100%;
+        max-height: auto;
     }
 }
   
