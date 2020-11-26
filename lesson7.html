@@ -2,63 +2,66 @@
 <html>
 <head>          
     <meta charset ="utf-8"> 
-    <meta name="viewport" content="width=device-width">
     <title>Nice cake recipe</title>
-    <!-- Giving this site a little color -->
-    <link rel="stylesheet" href="lesson6.css">
 </head>
-<body class="body-class">  
+<body>  
+<h1>Today we are going to make a cake.</h1>     
 
-<!-- Header -->
-<h1>
-  <p>A website about a great book - Harry Potter</p>
-</h1>
+<!-- Here we'll add the ingredients list and give viewer a picture. -->
+<p> This is a recipe for a cake. I really like cake because it tastes good and is full of sugar.
+    When you're done it should look like this:
+    <br>
+    <img src="https://www.handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE-550x550.jpg" alt="Choclate birthday cake"/>
+    <img src="https://www.handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-01-1.jpg" alt="Choclate birthday cake 2"/>
+    <br>
+    You will need the following ingredients to make the cake.
+</p>
 
-<div class="example-div">
-  <p>Harry Potter is one of my favourite books ever.  Here are some cool things about it and a few survey questions.</p>
-</div>
-<!-- Survey Question #1 -->
-<div class="example-div">
-  <p>Out of these three, who had the best acting?</p>
-  <form>
-    <input type="checkbox" id="fname" name="fname">Harry<br><br>
-    <input type="checkbox" id="fname" name="fname">Snape<br><br>
-    <input type="checkbox" id="fname" name="fname">He that shall not be named<br><br>
-    <input type="submit" value="Submit" >
-  </form>
-</div>
+<ul>
+  <li>3 cups flour</li>
+  <li>1/2 cup sugar</li>
+  <li>2 tsp. vanilla</li>
+  <li>2 eggs</li>
+  <li>1 cup milk</li>
+</ul>
 
-<!-- Cool Harry Potter quote -->
-<section>
-  <p>Here are a couple cool <span>Harry Potter</span> quotes:
-  <ul class="unordered-list">
-    <li><q>It does not do well to dwell on dreams and forget to live.</q></li>
-    <li><q>To the well-organized mind, <span style="color:black">death</span> is but the next great adventure.</q></li>
-    <li><q>Fear of a name only increases fear of the thing itself.</q></li>
-    <li><q>It is our choices, Harry, that show what we truly are, far more than our abilities.</q></li>
-  </ul>
-  </p>
-</section>
-
-<!-- Survey Question #2 -->
-<div id="movies" class="ordered-list">
-  <label for="movies">Here is a list of all the Harry Potter movies</label>
+<a href="mailto:"><img src="https://www.handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-01-1.jpg" alt="Choclate birthday cake 2" alt="Sprinkly Donut"></a>
+  
+<!-- Step by step instructions for how to make the cake.-->
+<nav>
+  Once you have the ingredients, follow the directions below:
   <ol>
-    <li> Harry Potter and the Philosopher's Stone</li>
-    <li> Harry Potter and the Chamber of Secrets</li>
-    <li> Harry Potter and the Prisoner of Azkaban </li>
-    <li> Harry Potter and the Goblet of <span style="color:red">Fire</span></li>
-    <li> Harry Potter and the Order of the Phoenix </li>
-    <li> Harry Potter and the Half-Blood Prince </li>
-    <li> Harry Potter and the Deathly Hallows – Part 1 </li>
-    <li> Harry Potter and the Deathly Hallows – Part 2 </li>
+   <li>Preheat oven to 400 degrees f.🔥🔥🔥</li>
+   <li>Take the flour and sugar and combine the in a bowl. Stir well. 🥣</li>
+   <li>Slowly stir in the milk while you continue to stir.</li>
+   <li>Mix the eggs and vanilla together in a seperate bowl and beat the eggs. 🥚🥚</li>
+   <li>Slowly stir in egg mixture</li>
+   <li>Once all ingredients are added whip them with a mixer until batter is similar to pancake mix.</li>
+   <li>Pour batter into a greased 9" by 9" baking pan</li>
+   <li>Put in oven for 24 minutes ⏲ </li>
+   <li>Take out and let it cool for 5 minutes 🆒</li>
+   <li>Enjoy!</li>
   </ol>
-</div>
+</nav>
 
-<!-- Video - Cool scene from Harry Potter movie -->
-<div id="video">
-  <p>Here is a great scene from the movie!</p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/hLn1brV3tX8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Here is a great scene from the movie.</iframe>
-  <p>Thanks for coming to this site! Hope you have a wonderful day and I hope that you enjoy the <span style="color:blue">blue</span> skies</p>
-</div>
+
+<p>Just in case you didn't like our recipe [although I don't see how ;) ] here are 5 more to try </p>
+<ul>
+  <li><a href="https://addapinch.com/the-best-chocolate-cake-recipe-ever/">the-best-chocolate-cake-recipe-ever</a></li>
+  <li><a href="https://sallysbakingaddiction.com/triple-chocolate-layer-cake/">triple-chocolate-layer-cake</a></li>
+  <li><a href="https://thestayathomechef.com/the-most-amazing-chocolate-cake/">the-most-amazing-chocolate-cake</a></li>
+  <li><a href="https://www.allrecipes.com/recipe/17528/extreme-chocolate-cake/">extreme-chocolate-cake</a></li>
+  <li><a href="https://www.allrecipes.com/recipe/17981/one-bowl-chocolate-cake-iii/">one-bowl-chocolate-cake</a></li>
+</ul>
 </body>
+
+
+/*It's time to make your recipe a bit more mobile friendly.
+
+1. Using a combination of HTML and CSS changes, modify your recipe site so that it works well on mobile devices of all sizes.
+2. Within your browser's dev-tools, simulate different screen sizes so that you can check your work.
+3. Look up the css "media" rule, and learn how to apply special styles to different browser sizes.
+4. Using one media rule, target all browsers smaller than 400px
+5. Using another media rule, target all browsers between 401px and 750px;
+6. Using another media rule, target all browsers larger than 750px.
+7. Add special styles to each media screen to enhance responsiveness (adjust font sizes, colors, hide and show content, etc).*/

@@ -104,14 +104,53 @@ nav {
     width: 100%;
 }
 
-nav ul{
+ul{
     list-style: none;
     padding-left: 0;
     display: flex;
     justify-content: space-around;
 }
 
-nav ul li{
+ul li{
     margin-left: 10px;
     margin-right: 10px;
-  }
+}
+
+  /*other keywords
+    border-radius -> curved corners
+    column-wrap
+    row-wrap + row-wrap-reverse
+    */
+
+
+@media only screen and (min-width: 10px) {
+    body {
+    background-color: lightcoral;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    body {
+        background-color: lightgreen;
+    }
+    ul{
+        border-radius: 15px;
+        background-color: limegreen;
+    }
+    nav{
+        padding-left: 50px;
+}
+
+@media screen and (min-width: 750px) {
+    body {
+        background-color: lightseagreen;
+    }
+    ul {
+        border-radius: 15px;
+        background-color: limegreen;
+    }
+    nav {
+        padding-left: 50px;
+    }
+}
+  
