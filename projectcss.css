@@ -1,6 +1,6 @@
 /* Here is a link to all the css properties and tags https://www.w3schools.com/css/default.asp */
 
-p img, a{
+p img, p > a{
     border-radius: 12px;
     width: 300px;
     height: 300px;
@@ -8,17 +8,17 @@ p img, a{
 }
 
 h1{
-    padding: 45px;
     font-weight: bold;
-    text-decoration: underline;
     font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+}
   
 .ordered-list{
 font-size: 16px;
@@ -29,51 +29,11 @@ list-style-type: upper-roman;
     font-family: 'Times New Roman', Times, serif;
 }
 
-#movies {
-    color: skyblue;
-}
-
-#video{
-    width: auto;
-}
-
-/* siblings of id - can add multiple '+' signs
-#example p+p {
-    background-color: yellow;
-}
-
-/* parent-child of id - these have a bunch of keywords after colon
-#example p:first-child{
-    background-color: yellow;
-}
-
-/* all paragrpahs when hovered over...
-#example p:hover{
-    background-color: yellow;
-}
-
-*/
-
-nav {
-    height: 50px;
-    background-color: teal;
-    width: 100%;
-}
-
 ul{
-    list-style: none;
-    padding-left: 0;
-    display: flex;
+    padding-left: 20;
     justify-content: space-around;
+    list-style: square;
 }
-
-
-  /*other keywords
-    border-radius -> curved corners
-    column-wrap
-    row-wrap + row-wrap-reverse
-    */
-
 
 @media only screen and (min-width: 10px) {
     body {
@@ -84,9 +44,16 @@ ul{
         max-height: auto;
         color: gray;
     }
-    ul{
-        border-radius: 0px;
+    ul, nav{
+        border-radius: 5px;
         color: white;
+        background-color: black;
+        padding-left: 20;
+        list-style: square;
+    }
+    img, a{
+        max-width: 100%;
+        max-height: auto;
     }
 }
 
@@ -94,12 +61,12 @@ ul{
     body {
         background-color: lightgray;
     }
-    ul{
-        border-radius: 15px;
+    ul, nav{
+        border-radius: 5px;
         color: black;
-    }
-    nav{
-        padding-left: 50px;
+        background-color: white;
+        list-style: square;
+        padding-left: 20;
     }
     img, a{
         max-width: 100%;
@@ -111,12 +78,12 @@ ul{
     body {
         background-color: lightsteelblue;
     }
-    ul {
-        border-radius: 15px;
+    ul, nav {
+        border-radius: 5px;
         color: white;
-    }
-    nav {
-        padding-left: 50px;
+        background-color: gray;
+        list-style: lower-latin;
+        padding-left: 20;
     }
     img, a{
         max-width: 100%;
