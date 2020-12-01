@@ -4,9 +4,9 @@ ul {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    position: fixed;
     top: 0;
-    width: 100%;
+    width: 90%;
+    position: relative;
   }
 
   li > a {
@@ -33,9 +33,21 @@ ul {
 
   .menu-small{
     display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
   }
 
-  @media only screen and (min-width: 800px) {
+  .menu-both{
+    display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  @media only screen and (min-width: 900px) {
 
     .menu-big{
       display: inline;
@@ -43,6 +55,8 @@ ul {
     .menu-small{
       display: none;
     }
-
+    .menu-both{
+      display: inline;
+    }
   }
 
