@@ -31,3 +31,22 @@ ul {
       color: black;
       text-decoration: none;
   }
+  .menu-big{
+    display: none;
+  }
+
+  .menu-small{
+    display: initial;
+  }
+
+  @media only screen and (min-width: 800px) {
+
+    .menu-big{
+      display: initial;
+    }
+    .menu-small{
+      display: none;
+    }
+
+  }
+
