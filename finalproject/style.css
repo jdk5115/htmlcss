@@ -38,7 +38,17 @@ ul {
     align-items: center;
     width: 50%;
   }
-
+  .menu-small:hover{
+    position: relative;
+    left: 6px;
+    top: 26px;
+    height: calc(1em + 2px);
+    padding:0.5em 0;
+    box-sizing:border-box;
+    width: 25px;
+    background: #979797 content-box;
+    transition: all 0.25s;
+  }
   .menu-both{
     display: inline;
     display: flex;
@@ -58,5 +68,7 @@ ul {
     .menu-both{
       display: inline;
     }
+
+
   }
 
