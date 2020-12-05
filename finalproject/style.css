@@ -1,3 +1,35 @@
+:root{
+  font-size: 16px;
+  font-family: 'Open Sans';
+  --text-primary: gray;
+  --text-secondary: black;
+  --bg-primary: white;
+  --bg-secondary: red;
+}
+
+body{
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar{
+  width: 0.40rem;
+}
+
+body::-webkit-scrollbar-track{
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: red;
+}
+
+main{
+  margin-left: 5rem;
+
+}
 ul {
     list-style-type: none;
     display: flex;
