@@ -5,7 +5,9 @@
   --text-secondary: black;
   --bg-primary: white;
   --bg-secondary: red;
+  text-align: center;
 }
+
 .grid-container {
   padding-left: 65px;
   align-items: center;
@@ -80,12 +82,9 @@
 }
 
 .xmas{
-  display: block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
 }
+
 
 body{
   color: black;
@@ -103,7 +102,7 @@ body::-webkit-scrollbar-track{
 }
 
 body::-webkit-scrollbar-thumb{
-  background: red;
+  background: palegreen;
 }
 
 main{
@@ -156,7 +155,10 @@ ul {
     align-items: center;
     width: 50%;
   }
-
+  img{
+    height: 50; 
+    width: 50; 
+}
   @media only screen and (min-width: 900px) {
 
     .menu-big{
