@@ -81,11 +81,6 @@
   max-height: 100%;
 }
 
-.xmas{
-  width: 100%;
-}
-
-
 body{
   color: black;
   background-color: white;
@@ -107,73 +102,94 @@ body::-webkit-scrollbar-thumb{
 
 main{
   margin-left: 5rem;
-
 }
+
 ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  top: 0;
+  width: 90%;
+  position: relative;
+}
+
+li > a {
+  padding: 10px;
+  padding-left: 40px;
+  background-color: #ffffff;
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+  
+footer div a{
+  color: black;
+  text-decoration: none;
+}
+.menu-big{
+  display: none;
+}
+
+.menu-small{
+  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.menu-both{
+  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.grid-container {
+  padding-left: 35px;
+}
+
+@media only screen and (min-width: 900px) {
+
+  .menu-big{
+    display: inline;
+  }
+
+  .menu-small{
+    display: none;
+  }
+
+  .menu-both{
+    display: inline;
+  }
+
+  #xmas{
+    height: 650px;
+    width: 650px;
+  }
+
+  #gridpic{
+    height: 350px;
+    width: 350px;
+  }
+  .grid-container {
+    padding-left: 65px;
     align-items: center;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    list-style-type: none;
+    justify-content: center;
     margin-top: 10px;
     top: 0;
     width: 90%;
     position: relative;
   }
-
-  li > a {
-    padding: 10px;
-    padding-left: 40px;
-    background-color: #ffffff;
-    color: black;
-    display: inline-block;
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    margin-bottom: 30px;
-    overflow: hidden;
-  }
-  
-  footer div a{
-      color: black;
-      text-decoration: none;
-  }
-  .menu-big{
-    display: none;
-  }
-
-  .menu-small{
-    display: inline;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-  }
-  .menu-both{
-    display: inline;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-  }
-  img{
-    height: 50; 
-    width: 50; 
 }
-  @media only screen and (min-width: 900px) {
-
-    .menu-big{
-      display: inline;
-    }
-    .menu-small{
-      display: none;
-    }
-    .menu-both{
-      display: inline;
-    }
-
-    #xmas{
-        height: 650; 
-        width: 650; 
-    }
-  }
 
